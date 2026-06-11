@@ -14,7 +14,7 @@ class Macconvert < Formula
 
   def caveats
     <<~EOS
-      Almost there — nothing is enabled yet. Finish the install with:
+      Almost there: nothing is enabled yet. Finish the install with:
 
         macconvert setup
 
