@@ -16,6 +16,10 @@ class Macconvert < Formula
     <<~EOS
       To choose which Quick Actions appear in Finder, run:
         macconvert setup
+
+      To remove everything later (Quick Actions, settings, the package),
+      use the built-in uninstaller rather than plain brew uninstall:
+        macconvert uninstall
     EOS
   end
 
