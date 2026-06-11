@@ -14,16 +14,21 @@ class Macconvert < Formula
 
   def caveats
     <<~EOS
-      Almost there: nothing is enabled yet. Finish the install with:
 
-        macconvert setup
+      ╭─────────────────────────────────────────────────────╮
+      │                                                     │
+      │   One step left! Nothing is enabled yet.            │
+      │                                                     │
+      │   Run:  macconvert setup                            │
+      │                                                     │
+      │   It opens the picker for the 44 Quick Actions,     │
+      │   installs only the dependencies you need, and      │
+      │   walks you through Send to Kindle.                 │
+      │                                                     │
+      ╰─────────────────────────────────────────────────────╯
 
-      It opens an interactive picker for the 44 Quick Actions, installs
-      only the dependencies you need, and walks through Send to Kindle.
-      (Homebrew can't run interactive steps during install.)
-
-      To remove everything later (Quick Actions, settings, the package),
-      use the built-in uninstaller rather than plain brew uninstall:
+      To remove everything later, use the built-in uninstaller
+      rather than plain brew uninstall:
         macconvert uninstall
     EOS
   end
