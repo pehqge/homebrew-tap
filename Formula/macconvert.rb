@@ -9,7 +9,7 @@ class Macconvert < Formula
 
   def install
     libexec.install Dir["*"]
-    (bin/"macconvert").write_exec_script libexec/"bin/macconvert"
+    bin.write_exec_script libexec/"bin/macconvert"
   end
 
   def caveats
